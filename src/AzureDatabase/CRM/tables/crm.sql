@@ -32,6 +32,6 @@ CREATE TABLE [comm].[CRM](
 	[AOR_Country] [varchar](4000) NULL,
 	[SecureEmail] [varchar](250) NULL,
 	[NonSecureEmail] [varchar](250) NULL
-	,CONSTRAINT [PK_CRM] PRIMARY KEY ([OnyxID])
+	
 ) ON [PRIMARY]
 GO
