@@ -3,3 +3,7 @@
 ################################################################################
 
 /src/OnPremDataBase/obj/Debug
+/src/OnPremDataBase/bin/Debug
+/src/AzureDatabase/obj/Debug
+/src/AzureDatabase/bin/Debug
+/.vs/ICM-ETL/v17/.suo
