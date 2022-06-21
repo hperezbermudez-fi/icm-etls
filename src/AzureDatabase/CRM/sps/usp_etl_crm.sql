@@ -23,42 +23,42 @@ BEGIN
 		DROP TABLE If Exists #TmpCRMArchive
  
 		-- Populate temp table 
-        INSERT INTO #TmpCRMArchive
-        SELECT  @ICMRunId,
-                @RecordId,
-				TRIM([OnyxID]),
-				TRIM([fi_SalutationLetter]),
-				TRIM([FirstName]),
-				TRIM([MiddleName]),
-				TRIM([LastName]),
-				TRIM([Suffix]),
-				TRIM([Client_Name]),
-				TRIM([User_Type]),
-				TRIM([User_SubType]),
-				TRIM([Country_CD]),
-				TRIM([SourceID]),
+        SELECT  @ICMRunId AS ICMRunId,
+                @RecordId AS RecordId,
+				TRIM([OnyxID]) AS OnyxID,
+				TRIM([fi_SalutationLetter]) AS fi_SalutationLetter,
+				TRIM([FirstName]) AS FirstName,
+				TRIM([MiddleName]) AS [MiddleName],
+				TRIM([LastName]) AS LastName,
+				TRIM([Suffix]) AS Suffix,
+				TRIM([Client_Name]) AS Client_Name,
+				TRIM([User_Type]) AS User_Type,
+				TRIM([User_SubType]) AS User_SubType,
+				TRIM([Country_CD]) AS Country_CD,
+				TRIM([SourceID]) AS SourceID,
 				CONVERT(VARCHAR, [OID_LOA_Dt], 101) AS [OID_LOA_Dt],
 				CONVERT(VARCHAR, [OID_FTD], 101) AS [OID_FTD],
-				TRIM([vchOSP]),
-				TRIM([vchIC]),
+				TRIM([vchOSP]) AS vchOSP,
+				TRIM([vchIC]) AS vchIC,
 				TRIM(STR([Relationship_Value], 9, 5)) AS [Relationship_Value],
-				TRIM([chResidentCountry]),
-				TRIM([vchServiceCountry]),
-				TRIM([E_Code_Dt]),
+				TRIM([chResidentCountry]) AS chResidentCountry,
+				TRIM([vchServiceCountry]) AS vchServiceCountry,
+				TRIM([E_Code_Dt]) AS E_Code_Dt,
 				CONVERT(VARCHAR, [ChgToFormerClient_Dt], 101) AS [ChgToFormerClient_Dt],
-				TRIM([IRIS_EnvelopeSalutation]),
-				TRIM([IRIS_LetterSalutation]),
-				TRIM([AOR_Address1]),
-				TRIM([AOR_Address2]),
-				TRIM([AOR_Address3]),
-				TRIM([AOR_City]),
-				TRIM([AOR_Region]),
-				TRIM([AOR_PostCode]),
-				TRIM([AOR_Country]),
-				TRIM([SecureEmail]),
-				TRIM([NonSecureEmail]),
-				TRIM(@CreatedByName),
+				TRIM([IRIS_EnvelopeSalutation]) AS IRIS_EnvelopeSalutation,
+				TRIM([IRIS_LetterSalutation]) AS IRIS_LetterSalutation,
+				TRIM([AOR_Address1]) AS AOR_Address1,
+				TRIM([AOR_Address2]) AS AOR_Address2,
+				TRIM([AOR_Address3]) AS AOR_Address3,
+				TRIM([AOR_City]) AS AOR_City,
+				TRIM([AOR_Region]) AS AOR_Region,
+				TRIM([AOR_PostCode]) AS AOR_PostCode,
+				TRIM([AOR_Country]) AS AOR_Country,
+				TRIM([SecureEmail]) AS SecureEmail,
+				TRIM([NonSecureEmail]) AS NonSecureEmail,
+				TRIM(@CreatedByName) AS CreatedByName,
                 GETDATE() AS CreatedOnDateTime
+		INTO #TmpCRMArchive
         FROM [comm].[CRM]
 
 		-- Output transformed data (only selected columns)
@@ -96,13 +96,10 @@ BEGIN
         From #TmpCRMArchive
 
 		-- Archive Transformed Data
-        INSERT INTO [comm].CRM_Archive
+        INSERT INTO comm.CRM_Archive
         SELECT  [ICMRunId],
                 [RecordId],
-                [Id],
-				[ICMRunId],
-				[RecordId],
-				[OnyxID],
+             	[OnyxID],
 				[fi_SalutationLetter],
 				[FirstName],
 				[MiddleName],
@@ -133,7 +130,7 @@ BEGIN
 				[AOR_Country],
 				[SecureEmail],
 				[NonSecureEmail],
-				[CreatedBy],
+				[CreatedByName],
                 [CreatedOnDateTime]
         FROM #TmpCRMArchive
 
@@ -148,6 +145,3 @@ BEGIN
         THROW
     END CATCH
 END
-GO
-
-

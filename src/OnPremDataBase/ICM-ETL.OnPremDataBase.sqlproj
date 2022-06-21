@@ -60,13 +60,15 @@
   <ItemGroup>
     <Folder Include="Properties" />
     <Folder Include="CRM" />
-    <Folder Include="CRM\sps" />
+    <Folder Include="HRER" />
+    <Folder Include="Common" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="comm.sql" />
-    <Build Include="CRM\sps\usp_post_crm.sql" />
-    <Build Include="CRM\sps\usp_pre_crm.sql" />
     <PostDeploy Include="CRM\Script.CRMDeployment.sql" />
     <Build Include="AzConfigOnPrem.sql" />
+    <None Include="HRER\Script.HRERDeployment.sql" />
+    <Build Include="Common\usp_post.sql" />
+    <Build Include="Common\usp_pre.sql" />
   </ItemGroup>
 </Project>
