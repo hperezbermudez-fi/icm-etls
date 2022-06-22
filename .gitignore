@@ -7,7 +7,7 @@
 /src/AzureDatabase/obj/Debug
 /src/AzureDatabase/bin/Debug
 /.vs/ICM-ETL/v17/.suo
-*.dbmdl
 *.jfm
-/src/AzureDatabase/ICM-ETL.AzureDB.jfm
+*.dbmdl
 /src/OnPremDataBase/ICM-ETL.OnPremDataBase.jfm
+/src/AzureDatabase/ICM-ETL.AzureDB.jfm

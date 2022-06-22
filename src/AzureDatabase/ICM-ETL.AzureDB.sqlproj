@@ -70,6 +70,9 @@
     <Folder Include="A120" />
     <Folder Include="A120\sps" />
     <Folder Include="A120\tables" />
+    <Folder Include="C110" />
+    <Folder Include="C110\sps" />
+    <Folder Include="C110\tables" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="CRM\tables\crm_archive.sql" />
@@ -100,6 +103,11 @@
     <Build Include="A120\tables\a120.sql" />
     <Build Include="A120\tables\a120_archive.sql" />
     <None Include="A120\Script.A120Deployment.sql" />
+    <Build Include="C110\sps\usp_etl_c110.sql" />
+    <Build Include="C110\sps\usp_pre_c110.sql" />
+    <Build Include="C110\tables\c110.sql" />
+    <Build Include="C110\tables\c110_archive.sql" />
+    <None Include="C110\Script.C110Deployment.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="ICM.AzureDB.refactorlog" />
