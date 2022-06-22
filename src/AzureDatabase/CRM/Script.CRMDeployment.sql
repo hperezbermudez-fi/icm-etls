@@ -16,7 +16,7 @@ INSERT INTO [comm].[VaricentApiConfiguration]
     )
     VALUES
         (
-            2
+            7
             ,'CRM'
             ,'CRM'
             ,23
@@ -43,7 +43,7 @@ INSERT INTO [comm].[ConfigOnAzure]
            ,[StartTime]
            ,[LastProcessedTime])
      VALUES
-           (2
+           (7
            ,'comm'
            ,'COMM_CRM_Relationship_Details_All'
            ,'comm'
@@ -56,7 +56,7 @@ INSERT INTO [comm].[ConfigOnAzure]
            ,'[comm].usp_pre_export_crm'
            ,'[comm].usp_post_export_crm'
            ,'crm'
-           ,'{FileNamePrefix}_{ICMRunId}_yyyyMMdd_hhmmss.psv'
+           ,'crm_{ICMRunId}_yyyyMMdd_hhmmss.psv'
            ,NULL
            ,NULL
            ,NULL
