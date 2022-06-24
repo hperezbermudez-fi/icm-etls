@@ -7,4 +7,11 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="SP_UserId" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="32bbcf04-7b70-494a-9b4d-43a74e3e0bfd" ChangeDateTime="06/14/2022 16:35:59">
+    <Property Name="ElementName" Value="[comm].[HRER_Archive].[HR_Payroll_FullNam]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[comm].[HRER_Archive]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="HR_Payroll_FullName" />
+  </Operation>
 </Operations>

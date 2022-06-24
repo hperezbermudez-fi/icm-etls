@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "26a632b8-0d77-4e26-8227-32181ea9b087": {
+      "ProjectGuid": "26a632b8-0d77-4e26-8227-32181ea9b087",
+      "DisplayName": "ICM.AzureDB",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}
