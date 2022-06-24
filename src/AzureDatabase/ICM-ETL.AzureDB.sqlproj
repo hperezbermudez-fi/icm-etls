@@ -73,6 +73,9 @@
     <Folder Include="C110" />
     <Folder Include="C110\sps" />
     <Folder Include="C110\tables" />
+    <Folder Include="Appointment" />
+    <Folder Include="Appointment\sps" />
+    <Folder Include="Appointment\tables" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="CRM\tables\crm_archive.sql" />
@@ -108,6 +111,11 @@
     <Build Include="C110\tables\c110.sql" />
     <Build Include="C110\tables\c110_archive.sql" />
     <None Include="C110\Script.C110Deployment.sql" />
+    <Build Include="Appointment\sps\usp_etl_appointment.sql" />
+    <Build Include="Appointment\sps\usp_pre_appointment.sql" />
+    <Build Include="Appointment\tables\appointment.sql" />
+    <Build Include="Appointment\tables\appointment_archive.sql" />
+    <None Include="Appointment\Script.AppointmentDeployment.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="ICM.AzureDB.refactorlog" />
