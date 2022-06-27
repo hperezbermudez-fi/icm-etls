@@ -74,7 +74,7 @@ BEGIN
 				[Resident_Country],
 				[Taxing_Country],
 				[Acct_Class]
-        From #A120CRMArchive
+        From #TmpA120Archive
 
 		-- Archive Transformed Data
         INSERT INTO comm.A120_Archive
