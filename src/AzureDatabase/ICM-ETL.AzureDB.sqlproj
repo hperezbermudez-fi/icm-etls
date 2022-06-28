@@ -76,6 +76,9 @@
     <Folder Include="Appointment" />
     <Folder Include="Appointment\sps" />
     <Folder Include="Appointment\tables" />
+	<Folder Include="FundingBoard" />
+    <Folder Include="FundingBoard\sps" />
+    <Folder Include="FundingBoard\tables" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="CRM\tables\crm_archive.sql" />
@@ -116,6 +119,11 @@
     <Build Include="Appointment\tables\appointment.sql" />
     <Build Include="Appointment\tables\appointment_archive.sql" />
     <None Include="Appointment\Script.AppointmentDeployment.sql" />
+    <Build Include="FundingBoard\sps\usp_etl_funding_board.sql" />
+    <Build Include="FundingBoard\sps\usp_pre_funding_board.sql" />
+    <Build Include="FundingBoard\tables\funding_board.sql" />
+    <Build Include="FundingBoard\tables\funding_board_archive.sql" />
+    <None Include="FundingBoard\Script.FundingBoardDeployment.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="ICM.AzureDB.refactorlog" />
