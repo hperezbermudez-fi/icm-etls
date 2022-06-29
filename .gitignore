@@ -11,3 +11,5 @@
 *.dbmdl
 /src/OnPremDataBase/ICM-ETL.OnPremDataBase.jfm
 /src/AzureDatabase/ICM-ETL.AzureDB.jfm
+src/OnPremDataBase/ICM-ETL.OnPremDataBase.jfm
+src/AzureDatabase/ICM-ETL.AzureDB.jfm

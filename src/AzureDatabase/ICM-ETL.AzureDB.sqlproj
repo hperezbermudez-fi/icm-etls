@@ -70,15 +70,21 @@
     <Folder Include="A120" />
     <Folder Include="A120\sps" />
     <Folder Include="A120\tables" />
+	<Folder Include="B120" />
+    <Folder Include="B120\sps" />
+    <Folder Include="B120\tables" />
     <Folder Include="C110" />
     <Folder Include="C110\sps" />
     <Folder Include="C110\tables" />
     <Folder Include="Appointment" />
     <Folder Include="Appointment\sps" />
     <Folder Include="Appointment\tables" />
-	<Folder Include="FundingBoard" />
+    <Folder Include="FundingBoard" />
     <Folder Include="FundingBoard\sps" />
     <Folder Include="FundingBoard\tables" />
+    <Folder Include="FxRates" />
+    <Folder Include="FxRates\sps" />
+    <Folder Include="FxRates\tables" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="CRM\tables\crm_archive.sql" />
@@ -109,6 +115,11 @@
     <Build Include="A120\tables\a120.sql" />
     <Build Include="A120\tables\a120_archive.sql" />
     <None Include="A120\Script.A120Deployment.sql" />
+	<Build Include="B120\sps\usp_etl_b120.sql" />
+    <Build Include="B120\sps\usp_pre_b120.sql" />
+    <Build Include="B120\tables\b120.sql" />
+    <Build Include="B120\tables\b120_archive.sql" />
+    <None Include="B120\Script.B120Deployment.sql" />
     <Build Include="C110\sps\usp_etl_c110.sql" />
     <Build Include="C110\sps\usp_pre_c110.sql" />
     <Build Include="C110\tables\c110.sql" />
@@ -124,6 +135,11 @@
     <Build Include="FundingBoard\tables\funding_board.sql" />
     <Build Include="FundingBoard\tables\funding_board_archive.sql" />
     <None Include="FundingBoard\Script.FundingBoardDeployment.sql" />
+    <Build Include="FxRates\sps\usp_etl_fx_rates.sql" />
+    <Build Include="FxRates\sps\usp_pre_fx_rates.sql" />
+    <Build Include="FxRates\tables\fx_rates.sql" />
+    <Build Include="FxRates\tables\fx_rates_archive.sql" />
+    <None Include="FxRates\Script.FxRatesDeployment.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="ICM.AzureDB.refactorlog" />
