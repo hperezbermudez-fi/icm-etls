@@ -146,7 +146,7 @@
     <Build Include="FxRates\tables\fx_rates.sql" />
     <Build Include="FxRates\tables\fx_rates_archive.sql" />
     <None Include="FxRates\Script.FxRatesDeployment.sql" />
-    <Build Include="SalesBopard\sps\sps\usp_etl_sales_board_osp.sql" />
+    <Build Include="SalesBoardOSP\sps\sps\usp_etl_sales_board_osp.sql" />
     <Build Include="SalesBoardOSP\sps\usp_pre_sales_board_osp.sql" />
     <Build Include="SalesBoardOSP\tables\sales_board_osp.sql" />
     <Build Include="SalesBoardOSP\tables\sales_board_osp_archive.sql" />
