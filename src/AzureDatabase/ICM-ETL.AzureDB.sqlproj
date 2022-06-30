@@ -70,7 +70,7 @@
     <Folder Include="A120" />
     <Folder Include="A120\sps" />
     <Folder Include="A120\tables" />
-	<Folder Include="B120" />
+    <Folder Include="B120" />
     <Folder Include="B120\sps" />
     <Folder Include="B120\tables" />
     <Folder Include="C110" />
@@ -85,6 +85,9 @@
     <Folder Include="FxRates" />
     <Folder Include="FxRates\sps" />
     <Folder Include="FxRates\tables" />
+    <Folder Include="SalesBoardOSP" />
+    <Folder Include="SalesBoardOSP\sps" />
+    <Folder Include="SalesBoardOSP\tables" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="CRM\tables\crm_archive.sql" />
@@ -115,7 +118,7 @@
     <Build Include="A120\tables\a120.sql" />
     <Build Include="A120\tables\a120_archive.sql" />
     <None Include="A120\Script.A120Deployment.sql" />
-	<Build Include="B120\sps\usp_etl_b120.sql" />
+    <Build Include="B120\sps\usp_etl_b120.sql" />
     <Build Include="B120\sps\usp_pre_b120.sql" />
     <Build Include="B120\tables\b120.sql" />
     <Build Include="B120\tables\b120_archive.sql" />
@@ -140,6 +143,11 @@
     <Build Include="FxRates\tables\fx_rates.sql" />
     <Build Include="FxRates\tables\fx_rates_archive.sql" />
     <None Include="FxRates\Script.FxRatesDeployment.sql" />
+    <Build Include="SalesBoardOSP\sps\usp_etl_sales_board_osp.sql" />
+    <Build Include="SalesBoardOSP\sps\usp_pre_sales_board_osp.sql" />
+    <Build Include="SalesBoardOSP\tables\sales_board_osp.sql" />
+    <Build Include="SalesBoardOSP\tables\sales_board_osp_archive.sql" />
+    <None Include="SalesBoardOSP\Script.SalesBoardOSPDeployment.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="ICM.AzureDB.refactorlog" />
