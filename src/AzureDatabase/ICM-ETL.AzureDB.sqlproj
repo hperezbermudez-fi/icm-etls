@@ -93,8 +93,6 @@
     <Folder Include="QTRBillingFile\tables" />
     <Folder Include="ConfirmedSplit" />
     <Folder Include="ConfirmedSplit\sps" />
-    <Folder Include="Copy of QTRBillingFile\tables" />
-    <Folder Include="Copy of QTRBillingFile\" />
     <Folder Include="ConfirmedSplit\tables\" />
   </ItemGroup>
   <ItemGroup>
