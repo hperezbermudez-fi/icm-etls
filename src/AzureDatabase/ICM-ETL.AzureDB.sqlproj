@@ -88,6 +88,12 @@
     <Folder Include="SalesBoardOSP" />
     <Folder Include="SalesBoardOSP\sps" />
     <Folder Include="SalesBoardOSP\tables" />
+    <Folder Include="QTRBillingFile" />
+    <Folder Include="QTRBillingFile\sps" />
+    <Folder Include="QTRBillingFile\tables" />
+    <Folder Include="ConfirmedSplit" />
+    <Folder Include="ConfirmedSplit\sps" />
+    <Folder Include="ConfirmedSplit\tables\" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="CRM\tables\crm_archive.sql" />
@@ -148,6 +154,16 @@
     <Build Include="SalesBoardOSP\tables\sales_board_osp.sql" />
     <Build Include="SalesBoardOSP\tables\sales_board_osp_archive.sql" />
     <None Include="SalesBoardOSP\Script.SalesBoardOSPDeployment.sql" />
+    <Build Include="QTRBillingFile\sps\usp_etl_qtr_billing_file.sql" />
+    <Build Include="QTRBillingFile\sps\usp_pre_qtr_billing_file.sql" />
+    <Build Include="QTRBillingFile\tables\qtr_billing_file.sql" />
+    <Build Include="QTRBillingFile\tables\qtr_billing_file_archive.sql" />
+    <None Include="QTRBillingFile\Script.QTRBillingFileDeployment.sql" />
+    <Build Include="ConfirmedSplit\sps\usp_etl_confirmed_split.sql" />
+    <Build Include="ConfirmedSplit\sps\usp_pre_confirmed_split.sql" />
+    <Build Include="ConfirmedSplit\tables\confirmed_split.sql" />
+    <Build Include="ConfirmedSplit\tables\confirmed_split_archive.sql" />
+    <None Include="ConfirmedSplit\Script.ConfirmedSplitDeployment.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="ICM.AzureDB.refactorlog" />
