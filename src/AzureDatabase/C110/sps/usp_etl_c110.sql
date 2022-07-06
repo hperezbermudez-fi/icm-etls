@@ -48,6 +48,18 @@ BEGIN
 
 		-- Archive Transformed Data
         INSERT INTO comm.C110_Archive
+        (
+                [ICMRunId],
+                [RecordId],
+				[RecordIDKey],
+				[FIN],
+				[valuation_dt],
+ 				[Base_MV_AUM],
+				[Base_MV_overall],
+				[Base_MV_cash],
+				[CreatedByName],
+                [CreatedOnDateTime]
+        )
         SELECT  [ICMRunId],
                 [RecordId],
 				[RecordIDKey],
@@ -55,7 +67,7 @@ BEGIN
 				[valuation_dt],
  				[Base_MV_AUM],
 				[Base_MV_overall],
-				[Base_MV_cash]
+				[Base_MV_cash],
 				[CreatedByName],
                 [CreatedOnDateTime]
         FROM #TmpC110Archive

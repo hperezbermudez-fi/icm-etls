@@ -58,6 +58,23 @@ BEGIN
 
 		-- Archive Transformed Data
         INSERT INTO comm.B120_Archive
+		(
+				[ICMRunId],
+                [RecordId],
+				[TxnID],
+				[Txn_Source],
+				[Acct_Type],
+				[FIN],
+				[Trans_Code],
+				[Trans_Curr],
+				[TransFxRate],
+				[FxRate],
+				[Trans_Date],
+				[Trans_Amt_Net],
+				[Internal_Trans],
+				[CreatedByName],
+                [CreatedOnDateTime]
+		)
         SELECT  [ICMRunId],
                 [RecordId],
 				[TxnID],

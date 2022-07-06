@@ -74,6 +74,30 @@ BEGIN
 
 		-- Archive Transformed Data
         INSERT INTO comm.Appointment_Archive
+		(
+				[ICMRunId],
+                [RecordId],
+				[Onyx_id],
+				[App_id],
+				[OSP_ID],
+				[SetupBy_ID],
+				[Entry_date],
+				[Set_date],
+				[App_Date],
+				[App_status_cd],
+				[App_status],
+				[App_type_cd],
+				[App_type],
+				[Accepted_flag],
+				[Aetl_approved],
+				[Aatl_id],
+				[Origination_id],
+				[Rule_id],
+				[Origination_Type],
+				[Origination_Code],
+                [MovedToHeld_Dt],
+                [CreatedOnDateTime]
+		)
         SELECT  [ICMRunId],
                 [RecordId],
 				[Onyx_id],

@@ -46,6 +46,17 @@ BEGIN
 
 		-- Archive Transformed Data
         INSERT INTO comm.FundingBoard_Archive
+        (
+                [ICMRunId],
+                [RecordId],
+				[OSP ID],
+				[Report Date],
+				[MTD],
+				[YTD],
+				[FYTD],
+				[CreatedByName],
+                [CreatedOnDateTime]
+        )
         SELECT  [ICMRunId],
                 [RecordId],
 				[OSP ID],

@@ -3,6 +3,7 @@ CREATE TABLE [comm].[QTRBillingFile_Archive](
 	[Id] [int] IDENTITY(1,1) NOT NULL,
 	[ICMRunId] [int] NULL,
 	[RecordId] [int] NULL,
+	[FIN] [varchar](20) NULL,
 	[CID] [varchar](32) NULL,
 	[BUSINESSUNITID] [varchar](32) NULL,
 	[INVOICEID] [varchar](40) NULL,

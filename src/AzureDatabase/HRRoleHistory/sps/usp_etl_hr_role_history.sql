@@ -26,7 +26,7 @@ BEGIN
 		-- Populate temp table 
         SELECT  @ICMRunId AS [ICMRunId],
                 @RecordId AS [RecordId],
-				[SP_UserID] AS [PayeeID],
+				CAST([SP_UserId] AS Int) AS [PayeeID],
 				TRIM([SP_Role]) AS [Role],
 				CONVERT(VARCHAR, [SP_Role_StartDt], 101) AS [EffectiveStartDate],
 				CONVERT(VARCHAR, [SP_Role_EndDt], 101) AS [EffectiveEndDate],
@@ -46,21 +46,31 @@ BEGIN
         From #TmpHRRoleHistory
 
 		-- Archive Transformed Data
-        INSERT INTO comm.HRRoleHistory
-        SELECT  [ICMRunId],
+        INSERT INTO comm.HRRoleHistory_Archive
+        (
+                [ICMRunId],
                 [RecordId],
-				[OnyxID],
 				[PayeeID],
 				[Role],
 				[EffectiveStartDate],
 				[EffectiveEndDate],
-				[SalesStartDate]
+				[SalesStartDate],
 				[CreatedByName],
                 [CreatedOnDateTime]
-        FROM #TmpCRMArchive
+        )
+        SELECT  [ICMRunId],
+                [RecordId],
+				[PayeeID],
+				[Role],
+				[EffectiveStartDate],
+				[EffectiveEndDate],
+				[SalesStartDate],
+				[CreatedByName],
+                [CreatedOnDateTime]
+        FROM #TmpHRRoleHistory
 
 		-- Remove Temp Table
-        DROP TABLE #TmpCRMArchive
+        DROP TABLE #TmpHRRoleHistory
         COMMIT TRANSACTION
 
     END TRY

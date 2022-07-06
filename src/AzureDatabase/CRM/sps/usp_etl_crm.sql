@@ -57,6 +57,23 @@ BEGIN
 
 		-- Archive Transformed Data
         INSERT INTO comm.CRM_Archive
+		(
+				[ICMRunId],
+                [RecordId],
+             	[OnyxID],
+				[fi_SalutationLetter],
+				[FirstName],
+				[MiddleName],
+				[LastName],
+				[Suffix],
+				[Client_Name],
+				[User_Type],
+				[User_SubType],
+				[vchOSP],
+				[E_Code_Dt],
+				[CreatedBy],
+                [CreatedOnDateTime]
+		)
         SELECT  [ICMRunId],
                 [RecordId],
              	[OnyxID],

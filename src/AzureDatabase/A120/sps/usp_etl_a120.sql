@@ -78,6 +78,33 @@ BEGIN
 
 		-- Archive Transformed Data
         INSERT INTO comm.A120_Archive
+		(
+				[ICMRunId],
+                [RecordId],
+				[FIN],
+				[ai_fin_acct_no],
+				[Short_Name],
+				[FIN_Status],
+				[OSP_CD],
+				[LOA_Dt],
+				[Open_Dt],
+				--Missing FirstTradeDate
+				[IPD],
+				[TERM_Dt],
+				[Close_Dt],
+				[Reconcile_Dt],
+				[Created_Dt],
+				[AA_Flag],
+				[Base],
+				[Fee_CD],
+				[FI_Company_ID],
+				[Reporting_Country],
+				[Resident_Country],
+				[Taxing_Country],
+				[Acct_Class],
+				[CreatedByName],
+                [CreatedOnDateTime]
+		)
         SELECT  [ICMRunId],
                 [RecordId],
 				[FIN],
@@ -100,7 +127,7 @@ BEGIN
 				[Reporting_Country],
 				[Resident_Country],
 				[Taxing_Country],
-				[Acct_Class]
+				[Acct_Class],
 				[CreatedByName],
                 [CreatedOnDateTime]
         FROM #TmpA120Archive

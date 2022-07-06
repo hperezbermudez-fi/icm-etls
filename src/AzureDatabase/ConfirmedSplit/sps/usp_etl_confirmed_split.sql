@@ -46,13 +46,24 @@ BEGIN
 
 		-- Archive Transformed Data
         INSERT INTO comm.ConfirmedSplit_Archive
+        (
+                [ICMRunId],
+                [RecordId],
+			    [ClientID],
+			    [EffectiveDate],
+			    [EffectiveEndDate],
+			    [EmployeeID],
+			    [Percentage],	
+			    [CreatedByName],
+                [CreatedOnDateTime]
+        )
         SELECT  [ICMRunId],
                 [RecordId],
 				[ClientID],
 				[EffectiveDate],
 				[EffectiveEndDate],
 				[EmployeeID],
-				[Percentage]	
+				[Percentage],	
 				[CreatedByName],
                 [CreatedOnDateTime]
         FROM #TmpConfirmedSplit

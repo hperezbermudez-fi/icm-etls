@@ -3,11 +3,11 @@
 	[ICMRunId] [int] NULL,
 	[RecordId] [int] NULL,
 	[PayeeID] [int] NULL,
-	[Role] varchar(50) NULL,
-	[EffectiveStartDate] varchar(50) NULL,
-	[EffectiveEndDate] varchar(50) NULL,
-	[SalesStartDate] varchar(50) NULL,
-	[CreatedBy] [varchar](100) NULL,
+	[Role] [varchar](50) NULL,
+	[EffectiveStartDate] [varchar](50) NULL,
+	[EffectiveEndDate] [varchar](50) NULL,
+	[SalesStartDate] [varchar](50) NULL,
+	[CreatedByName] [nvarchar](100) NULL,
 	[CreatedOnDateTime] [datetime] NULL,
 	CONSTRAINT [PK_HR_Role_History_Archive] PRIMARY KEY ([Id])
 ) ON [PRIMARY]

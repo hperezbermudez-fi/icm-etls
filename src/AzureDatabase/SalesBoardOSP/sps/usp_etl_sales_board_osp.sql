@@ -50,8 +50,21 @@ BEGIN
 
 		-- Archive Transformed Data
         INSERT INTO comm.SalesBoardOSP_Archive
+        (
+				[ICMRunId],
+                [RecordId],
+				[CID],
+				[Board],
+				[Type],
+				[OSP_Code],
+				[Amount],
+				[Sign Date],
+				[Entry Date],
+				[CreatedByName],
+                [CreatedOnDateTime]
+        )
         SELECT  [ICMRunId],
-                [RecordId,
+                [RecordId],
 				[CID],
 				[Board],
 				[Type],
