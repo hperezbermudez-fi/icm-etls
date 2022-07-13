@@ -94,6 +94,9 @@
     <Folder Include="ConfirmedSplit" />
     <Folder Include="ConfirmedSplit\sps" />
     <Folder Include="ConfirmedSplit\tables\" />
+    <Folder Include="EAF" />
+    <Folder Include="EAF\sps" />
+    <Folder Include="EAF\tables" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="CRM\tables\crm_archive.sql" />
@@ -164,6 +167,11 @@
     <Build Include="ConfirmedSplit\tables\confirmed_split.sql" />
     <Build Include="ConfirmedSplit\tables\confirmed_split_archive.sql" />
     <None Include="ConfirmedSplit\Script.ConfirmedSplitDeployment.sql" />
+    <Build Include="EAF\sps\usp_etl_eaf.sql" />
+    <Build Include="EAF\sps\usp_pre_eaf.sql" />
+    <Build Include="EAF\tables\eaf.sql" />
+    <Build Include="EAF\tables\eaf_archive.sql" />
+    <None Include="EAF\Script.EAFDeployment.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="ICM.AzureDB.refactorlog" />
