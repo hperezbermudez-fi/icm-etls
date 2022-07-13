@@ -2,7 +2,7 @@
 -- =============================================
 -- Author: Hardys Perez
 -- Create Date: 07/13/2022
--- Description: Transform, output and archive A120
+-- Description: Transform, output and archive EAF
 
 CREATE PROCEDURE [comm].[usp_etl_eaf]
 (
