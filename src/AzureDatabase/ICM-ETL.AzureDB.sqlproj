@@ -97,6 +97,9 @@
     <Folder Include="EAF" />
     <Folder Include="EAF\sps" />
     <Folder Include="EAF\tables" />
+	<Folder Include="BFR" />
+    <Folder Include="BFR\sps" />
+    <Folder Include="BFR\tables" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="CRM\tables\crm_archive.sql" />
@@ -172,6 +175,11 @@
     <Build Include="EAF\tables\eaf.sql" />
     <Build Include="EAF\tables\eaf_archive.sql" />
     <None Include="EAF\Script.EAFDeployment.sql" />
+	<Build Include="BFR\sps\usp_etl_bfr.sql" />
+    <Build Include="BFR\sps\usp_pre_bfr.sql" />
+    <Build Include="BFR\tables\bfr.sql" />
+    <Build Include="BFR\tables\bfr_archive.sql" />
+    <None Include="BFR\Script.BFRDeployment.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="ICM.AzureDB.refactorlog" />
