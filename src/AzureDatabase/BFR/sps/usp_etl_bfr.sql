@@ -26,7 +26,7 @@ BEGIN
 		-- Populate temp table 
         SELECT  @ICMRunId AS ICMRunId,
                 @RecordId AS RecordId,
-				Trim([vchFinNo]) AS [Customer],
+				Trim([CID]) AS [Customer],
 				CONVERT(VARCHAR, [RunDate], 101) AS [RunDate],
 				CONVERT(VARCHAR, [QtrEndDate], 101) AS [MonthEnd],
 				TRIM(STR([BillingRateAmount], 9, 5)) AS [BillingRateAmount],

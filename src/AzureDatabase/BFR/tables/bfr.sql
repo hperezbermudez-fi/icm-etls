@@ -3,6 +3,7 @@
 CREATE Table [comm].[BFR](  
 	 [RecordId]  [nvarchar](150) not null,
 	 [vchFinNo] [nvarchar](32) null,
+	 [CID] [nvarchar](32) null,
 	 [RunDate] [date] null, 
 	 [RunType] [char](3) null,
 	 [BillingRateAmount][float] null,

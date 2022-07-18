@@ -27,7 +27,7 @@ BEGIN
         SELECT  @ICMRunId AS ICMRunId,
                 @RecordId AS RecordId,
 				Trim([RecordID]) AS [RecordIDKey],
-				Trim([vchFinNo]) AS [CID],
+				Trim([CID]) AS [CID],
 				Trim([RunType]) AS [RunType],
 				CONVERT(VARCHAR, [RunDate], 101) AS [RunDate],
 				CONVERT(VARCHAR, [QtrEndDate], 101) AS [MonthEnd],
