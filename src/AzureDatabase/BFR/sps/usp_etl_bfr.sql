@@ -29,7 +29,7 @@ BEGIN
 				Trim([CID]) AS [Customer],
 				CONVERT(VARCHAR, [RunDate], 101) AS [RunDate],
 				CONVERT(VARCHAR, [QtrEndDate], 101) AS [MonthEnd],
-				TRIM(STR([BillingRateAmount], 9, 5)) AS [BillingRateAmount],
+				TRIM(STR([BillingRateAmount], 9, 5)) AS [dBillingRateAmount],
 				TRIM(@CreatedByName) AS CreatedByName,
                 GETDATE() AS CreatedOnDateTime
 		INTO #TmpBFRArchive
