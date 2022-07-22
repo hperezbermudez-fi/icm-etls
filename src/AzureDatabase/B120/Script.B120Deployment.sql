@@ -54,8 +54,8 @@ INSERT INTO [comm].[ConfigOnAzure]
            ,'[comm].usp_etl_b120'
            ,'[comm].usp_pre_export'
            ,'[comm].usp_post_export'
-           ,'Transaction'
-           ,'Transaction_{ICMRunId}_yyyyMMdd_hhmmss.psv'
+           ,'Transactions_FIIG'
+           ,'Transactions_FIIG{ICMRunId}_yyyyMMdd_hhmmss.psv'
            ,NULL
            ,NULL
            ,NULL

@@ -1,4 +1,4 @@
-﻿CREATE TABLE [comm].[SalesBoardOSP_Archive](
+﻿CREATE TABLE [comm].[SalesBoard_Archive](
 	[Id] [int] IDENTITY(1,1) NOT NULL,
 	[ICMRunId] [int] NULL,
 	[RecordId] [int] NULL,

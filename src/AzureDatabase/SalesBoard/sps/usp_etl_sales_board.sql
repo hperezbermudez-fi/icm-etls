@@ -2,9 +2,9 @@
 -- =============================================
 -- Author: Hardys Perez
 -- Create Date: 6/29/2022
--- Description: Transform, output and archive SalesBoardOSP
+-- Description: Transform, output and archive SalesBoard
 
-CREATE PROCEDURE [comm].[usp_etl_sales_board_osp]
+CREATE PROCEDURE [comm].[usp_etl_sales_board]
 (
     @ICMRunId INT,
     @RecordId INT
@@ -21,7 +21,7 @@ BEGIN
     SET @CreatedByName = SYSTEM_USER
     BEGIN TRY
         BEGIN TRANSACTION
-		DROP TABLE If Exists #TmpSalesBoardOSP
+		DROP TABLE If Exists #TmpSalesBoard
  
 		-- Populate temp table 
         SELECT  @ICMRunId AS [ICMRunId],
@@ -35,8 +35,8 @@ BEGIN
 				CONVERT(VARCHAR, [EntryDate], 101) AS [Entry Date],
 				TRIM(@CreatedByName) AS [CreatedByName],
                 GETDATE() AS [CreatedOnDateTime]
-		INTO #TmpSalesBoardOSP
-        FROM [comm].[SalesBoardOSP]
+		INTO #TmpSalesBoard
+        FROM [comm].[SalesBoard]
 
 		-- Output transformed data (only selected columns)
         SELECT  [CID],
@@ -46,10 +46,10 @@ BEGIN
 				[Amount],
 				[Sign Date],
 				[Entry Date]
-        From #TmpSalesBoardOSP
+        From #TmpSalesBoard
 
 		-- Archive Transformed Data
-        INSERT INTO comm.SalesBoardOSP_Archive
+        INSERT INTO comm.SalesBoard_Archive
         (
 				[ICMRunId],
                 [RecordId],
@@ -74,10 +74,10 @@ BEGIN
 				[Entry Date],
 				[CreatedByName],
                 [CreatedOnDateTime]
-        FROM #TmpSalesBoardOSP
+        FROM #TmpSalesBoard
 
 		-- Remove Temp Table
-        DROP TABLE #TmpSalesBoardOSP
+        DROP TABLE #TmpSalesBoard
         COMMIT TRANSACTION
 
     END TRY

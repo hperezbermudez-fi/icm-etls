@@ -1,6 +1,6 @@
-﻿--[comm].[VCOMM_SalesBoardOSP]
+﻿--[comm].[VCOMM_SalesBoardAE]
 
-CREATE TABLE [comm].[SalesBoardOSP](
+CREATE TABLE [comm].[SalesBoard](
 	[Id] [int] NOT NULL,
 	[CID] [int] NOT NULL,
 	[Board] [varchar](100) NULL,

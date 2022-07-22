@@ -1,8 +1,8 @@
-﻿:r .\tables\sales_board_osp.sql
-:r .\tables\sales_board_osp_archive.sql
+﻿:r .\tables\sales_board.sql
+:r .\tables\sales_board_archive.sql
 
-:r .\sps\usp_etl_sales_board_osp.sql
-:r .\sps\usp_pre_sales_board_osp.sql
+:r .\sps\usp_etl_sales_board.sql
+:r .\sps\usp_pre_sales_board.sql
 
 DECLARE @RecordID INT = 18;
 DECLARE @FolderID INT = 30;
@@ -17,8 +17,8 @@ INSERT INTO [comm].[VaricentApiConfiguration]
 VALUES
 (
     @RecordID
-    ,'SalesBoardOSP'
-    ,'SalesBoardOSP'
+    ,'SalesBoard'
+    ,'SalesBoard'
     ,@FolderID
 )
 
@@ -44,18 +44,18 @@ INSERT INTO [comm].[ConfigOnAzure]
      VALUES
            (@RecordID
            ,'comm'
-           ,'VCOMM_SalesBoardOSP'
+           ,'VCOMM_SalesBoardAE'
            ,'comm'
-           ,'SalesBoardOSP'
+           ,'SalesBoard'
            ,'[comm].usp_pre'
            ,'[comm].usp_post'
-           ,'[comm].usp_pre_sales_board_osp' --Truncate the table
+           ,'[comm].usp_pre_sales_board' --Truncate the table
            ,'[comm].usp_post'
-           ,'[comm].usp_etl_sales_board_osp'
+           ,'[comm].usp_etl_sales_board'
            ,'[comm].usp_pre_export'
            ,'[comm].usp_post_export'
-           ,'SalesBoardOSP'
-           ,'SalesBoardOSP_{ICMRunId}_yyyyMMdd_hhmmss.psv'
+           ,'SalesBoard_FIIG'
+           ,'SalesBoard_FIIG_{ICMRunId}_yyyyMMdd_hhmmss.psv'
            ,NULL
            ,NULL
            ,NULL

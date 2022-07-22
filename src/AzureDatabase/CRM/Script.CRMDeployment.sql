@@ -55,8 +55,8 @@ INSERT INTO [comm].[ConfigOnAzure]
            ,'[comm].usp_etl_crm'
            ,'[comm].usp_pre_export_crm'
            ,'[comm].usp_post_export_crm'
-           ,'crm'
-           ,'crm_{ICMRunId}_yyyyMMdd_hhmmss.psv'
+           ,'CRM_FIIG'
+           ,'CRM_FIIG_{ICMRunId}_yyyyMMdd_hhmmss.psv'
            ,NULL
            ,NULL
            ,NULL
