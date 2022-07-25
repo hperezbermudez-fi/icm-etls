@@ -54,8 +54,8 @@ INSERT INTO [comm].[ConfigOnAzure]
            ,'[comm].usp_etl_c110'
            ,'[comm].usp_pre_export'
            ,'[comm].usp_post_export'
-           ,'AUM_FIIG'
-           ,'AUM_FIIG_{ICMRunId}_yyyyMMdd_hhmmss.psv'
+           ,'AUM_FIN'
+           ,'AUM_FIN_{ICMRunId}_yyyyMMdd_hhmmss.psv'
            ,NULL
            ,NULL
            ,NULL

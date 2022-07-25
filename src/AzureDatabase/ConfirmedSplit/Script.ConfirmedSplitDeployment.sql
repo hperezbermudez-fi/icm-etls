@@ -54,8 +54,8 @@ INSERT INTO [comm].[ConfigOnAzure]
            ,'[comm].usp_etl_confirmed_split'
            ,'[comm].usp_pre_export'
            ,'[comm].usp_post_export'
-           ,'Splits_FIIG'
-           ,'Splits_FIIG_{ICMRunId}_yyyyMMdd_hhmmss.psv'
+           ,'Splits_FIN'
+           ,'Splits_FIN_{ICMRunId}_yyyyMMdd_hhmmss.psv'
            ,NULL
            ,NULL
            ,NULL

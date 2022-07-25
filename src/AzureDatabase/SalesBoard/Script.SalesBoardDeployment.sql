@@ -54,8 +54,8 @@ INSERT INTO [comm].[ConfigOnAzure]
            ,'[comm].usp_etl_sales_board'
            ,'[comm].usp_pre_export'
            ,'[comm].usp_post_export'
-           ,'SalesBoard_FIIG'
-           ,'SalesBoard_FIIG_{ICMRunId}_yyyyMMdd_hhmmss.psv'
+           ,'SalesBoard_FIN'
+           ,'SalesBoard_FIN_{ICMRunId}_yyyyMMdd_hhmmss.psv'
            ,NULL
            ,NULL
            ,NULL

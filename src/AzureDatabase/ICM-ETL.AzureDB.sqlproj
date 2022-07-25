@@ -85,9 +85,9 @@
     <Folder Include="FxRates" />
     <Folder Include="FxRates\sps" />
     <Folder Include="FxRates\tables" />
-    <Folder Include="SalesBoardOSP" />
-    <Folder Include="SalesBoardOSP\sps" />
-    <Folder Include="SalesBoardOSP\tables" />
+    <Folder Include="SalesBoard" />
+    <Folder Include="SalesBoard\sps" />
+    <Folder Include="SalesBoard\tables" />
     <Folder Include="QTRBillingFile" />
     <Folder Include="QTRBillingFile\sps" />
     <Folder Include="QTRBillingFile\tables" />
@@ -97,7 +97,7 @@
     <Folder Include="EAF" />
     <Folder Include="EAF\sps" />
     <Folder Include="EAF\tables" />
-	<Folder Include="BFR" />
+    <Folder Include="BFR" />
     <Folder Include="BFR\sps" />
     <Folder Include="BFR\tables" />
   </ItemGroup>
@@ -155,11 +155,11 @@
     <Build Include="FxRates\tables\fx_rates.sql" />
     <Build Include="FxRates\tables\fx_rates_archive.sql" />
     <None Include="FxRates\Script.FxRatesDeployment.sql" />
-    <Build Include="SalesBoardOSP\sps\usp_etl_sales_board_osp.sql" />
-    <Build Include="SalesBoardOSP\sps\usp_pre_sales_board_osp.sql" />
-    <Build Include="SalesBoardOSP\tables\sales_board_osp.sql" />
-    <Build Include="SalesBoardOSP\tables\sales_board_osp_archive.sql" />
-    <None Include="SalesBoardOSP\Script.SalesBoardOSPDeployment.sql" />
+    <Build Include="SalesBoard\sps\usp_etl_sales_board.sql" />
+    <Build Include="SalesBoard\sps\usp_pre_sales_board.sql" />
+    <Build Include="SalesBoard\tables\sales_board.sql" />
+    <Build Include="SalesBoard\tables\sales_board_archive.sql" />
+    <None Include="SalesBoard\Script.SalesBoardDeployment.sql" />
     <Build Include="QTRBillingFile\sps\usp_etl_qtr_billing_file.sql" />
     <Build Include="QTRBillingFile\sps\usp_pre_qtr_billing_file.sql" />
     <Build Include="QTRBillingFile\tables\qtr_billing_file.sql" />
@@ -175,7 +175,7 @@
     <Build Include="EAF\tables\eaf.sql" />
     <Build Include="EAF\tables\eaf_archive.sql" />
     <None Include="EAF\Script.EAFDeployment.sql" />
-	<Build Include="BFR\sps\usp_etl_bfr.sql" />
+    <Build Include="BFR\sps\usp_etl_bfr.sql" />
     <Build Include="BFR\sps\usp_pre_bfr.sql" />
     <Build Include="BFR\tables\bfr.sql" />
     <Build Include="BFR\tables\bfr_archive.sql" />
